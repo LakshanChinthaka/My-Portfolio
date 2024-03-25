@@ -1,11 +1,14 @@
-import NabBar from "@/Components/NabBar";
+"use client";
 import MainPage from "@/page/MainPage";
 
+
 export default function Home() {
+
   return (
-    <main >
-      <NabBar/>
-      <MainPage />
+    <main className="bg-gray-900">
+      <div  >
+        <MainPage />
+      </div>
     </main>
   );
 }
