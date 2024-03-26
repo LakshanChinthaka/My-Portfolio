@@ -1,3 +1,4 @@
+"use client"
 import { FiBarChart } from "react-icons/fi";
 import { FaBook } from "react-icons/fa";
 import { SiAnswer } from "react-icons/si";
@@ -13,8 +14,10 @@ const VerticalAccordion = () => {
   return (
     <section className="p-4 bg-gray-900 h-screen mt-20 mb-5 lg:mb-[-80px]">
 
-      <div className="mr-auto flex justify-center md:ml-20 lg:mt-0 mb-5">
-        <h1 className="text-gray-800 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  text-center tracking-tight leading-none md:text-4xl xl:text-[50px] lg:text-[40px] flex   dark:text-white">My <h1 className="ml-3 text-[#fbb40c] animate-bounce">Work.</h1></h1>
+      <div className="flex justify-center">
+
+        <h1 className="text-gray-800 relative  z-10 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[50px] lg:text-[45px] flex   dark:text-white">My </h1>
+        <h1 className=" max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[50px] lg:text-[45px] flex  ml-3 text-[#fbb40c] animate-bounce relative z-10">Work.</h1>
       </div>
 
 
@@ -40,7 +43,7 @@ const VerticalAccordion = () => {
   );
 };
 
-const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description, githubUrl }) => {
+const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) => {
   const { width } = useWindowSize();
   const isOpen = open === id;
 

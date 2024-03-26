@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { IoLogoWhatsapp } from "react-icons/io";
+// import { IoLogoWhatsapp } from "react-icons/io";
 import ViewBtn from "./Button/ViweBtn";
 import DownloadBtn from "./Button/DownloadBtn";
 
@@ -29,7 +29,11 @@ function HeroSection() {
 
                     <div className="mr-auto place-self-center lg:col-span-7 lg:mt-20">
 
-                        <h1 className="text-gray-800 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[57px] lg:text-[45px] flex   dark:text-white">I'm <h1 className="ml-3 text-[#fbb40c] animate-bounce">Lakshan Chinthaka.</h1></h1>
+                        <div className="inline-flex">
+
+                        <h1 className="text-gray-800 relative  z-10 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[57px] lg:text-[45px] flex   dark:text-white">I'm </h1>
+                        <h1 className=" max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[57px] lg:text-[45px] flex  ml-3 text-[#fbb40c] animate-bounce relative z-10">Lakshan Chinthaka.</h1>
+                        </div>
 
                         <h5 className="text-gray-800 flex justify-center max-w-2xl mb-4 text-xl lg:my-8 font-extrabold tracking-wide lg:text-center  md:text-5xl xl:text-[30px] lg:text-[25px]  dark:text-white ">Software Engineering</h5>
 

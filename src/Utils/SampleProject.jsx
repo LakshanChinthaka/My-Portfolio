@@ -1,3 +1,4 @@
+"use client"
 import { useAnimate } from "framer-motion";
 import React, { useRef } from "react";
 import { FiMousePointer } from "react-icons/fi";
@@ -29,8 +30,8 @@ export const SampleProject = () => {
       ]}
     >
       <section className="grid h-screen w-full place-content-center bg-transparent">
-        <p className="flex justify-center items-center gap-2 text-[80px] font-bold uppercase text-gray-400">
-          <span > <h1 className="text-gray-800 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-3xl xl:text-[30px] lg:text-[30px] flex   dark:text-white">Hover <h1 className="ml-3 text-[#fbb40c] animate-bounce"> me.</h1></h1></span>
+        <p className="flex justify-center items-center gap-2 text-[80px] font-bold uppercase text-yellow-400">
+          HOVER ME
         </p>
       </section>
     </MouseImageTrail>
@@ -97,15 +98,13 @@ const MouseImageTrail = ({
       {
         opacity: [0, 1],
         transform: [
-          `translate(-50%, -25%) scale(0.5) ${
-            imageIndex % 2
-              ? `rotate(${rotation}deg)`
-              : `rotate(-${rotation}deg)`
+          `translate(-50%, -25%) scale(0.5) ${imageIndex % 2
+            ? `rotate(${rotation}deg)`
+            : `rotate(-${rotation}deg)`
           }`,
-          `translate(-50%, -50%) scale(1) ${
-            imageIndex % 2
-              ? `rotate(-${rotation}deg)`
-              : `rotate(${rotation}deg)`
+          `translate(-50%, -50%) scale(1) ${imageIndex % 2
+            ? `rotate(-${rotation}deg)`
+            : `rotate(${rotation}deg)`
           }`,
         ],
       },
