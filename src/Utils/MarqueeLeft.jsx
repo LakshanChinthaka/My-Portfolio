@@ -40,7 +40,7 @@ function MarqueeLeft() {
         <>
             <div className="overflow-hidden mb-20 bg-gray-900">
                 <motion.h1
-                    className="text-gray-400 whitespace-nowrap font-bold"
+                    className="text-gray-400  opacity-20 whitespace-nowrap font-bold"
                     variants={sliderVariantsLeft}
                     initial="initial"
                     animate="animate"

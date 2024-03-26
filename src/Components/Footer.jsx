@@ -8,7 +8,7 @@ function Footer() {
             <footer className="bg-gray-900 py-4 px-10 font-[sans-serif]">
                 <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" className="hover:underline">Chincodex™</a>. All Rights Reserved.</span>
-                    <ul className="flex space-x-4">
+                    <ul className="flex space-x-4 relative">
                         <li>
                             <a href="https://github.com/LakshanChinthaka" target="_blank">
                                 <FaGithub className="w-[30px] h-[30px] lg:w-[42px] lg:h-20 fill-gray-800 hover:fill-black dark:fill-gray-500" />

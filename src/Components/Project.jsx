@@ -11,7 +11,7 @@ const VerticalAccordion = () => {
   const [open, setOpen] = useState(items[0].id);
 
   return (
-    <section className="p-4 bg-gray-900 h-screen mt-20 mb-5 ">
+    <section className="p-4 bg-gray-900 h-screen mt-20 mb-5 lg:mb-[-80px]">
 
       <div className="mr-auto flex justify-center md:ml-20 lg:mt-0 mb-5">
         <h1 className="text-gray-800 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  text-center tracking-tight leading-none md:text-4xl xl:text-[50px] lg:text-[40px] flex   dark:text-white">My <h1 className="ml-3 text-[#fbb40c] animate-bounce">Work.</h1></h1>

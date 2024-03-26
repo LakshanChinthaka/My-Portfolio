@@ -8,6 +8,7 @@ import Project from '@/Components/Project'
 import MarqueeLeft from '@/Utils/MarqueeLeft';
 import Contact from '@/Components/Contact';
 import Footer from '@/Components/Footer';
+import { SampleProject } from '@/Utils/SampleProject';
 
 
 function MainPage() {
@@ -42,13 +43,13 @@ function MainPage() {
           className='relative'
         >
           <HeroSection />
-        
+
         </motion.div>
       </div>
+      
+      <SampleProject/>
 
-      <img src="/bg.png" 
-      className='xl:mt-[-200px] z-1'
-      alt="portfolio-background-image" />
+
 
       <About />
       <MarqueeLeft />
