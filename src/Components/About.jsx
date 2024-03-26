@@ -53,7 +53,11 @@ function About() {
                         }}
                     >
 
-                        <h1 className="text-gray-800 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  text-center tracking-tight leading-none md:text-4xl xl:text-[50px] lg:text-[40px] flex   dark:text-white">My <h1 className="ml-3 text-[#fbb40c] animate-bounce">Story.</h1></h1>
+                        <div className="xl:inline-flex lg:inline-flex md:inline-flex sm:inline-flex inline-flex">
+
+                            <h1 className="text-gray-800 relative  z-10 max-w-2xl xl:mt-[-50px] justify-start mb-4  text-4xl font-extrabold text-center tracking-tight leading-none md:text-5xl xl:text-[50px] lg:text-[45px] flex   dark:text-white">My </h1>
+                            <h1 className=" max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-start  text-center tracking-tight leading-none md:text-5xl xl:text-[50px] lg:text-[45px] flex  ml-3 text-[#fbb40c] animate-bounce relative z-10">Story.</h1>
+                        </div>
 
                         <h5 className="text-gray-800 max-w-2xl mb-4 text-xl lg:my-8 font-extrabold tracking-wide lg:text-center  md:text-5xl xl:text-[30px] lg:text-[25px] flex dark:text-white "> Exploring Experience, Expertise</h5>
 

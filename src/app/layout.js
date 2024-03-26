@@ -22,10 +22,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* HTTP Security Headers */}
-        <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-        <meta http-equiv="X-Frame-Options" content="deny" />
-        <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload" />
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+        <meta httpEquiv="X-Frame-Options" content="deny" />
+        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
+        <meta httpEquiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload" />
         <meta name="referrer" content="no-referrer" />
         {/* Metadata */}
         <title>{metadata.title}</title>

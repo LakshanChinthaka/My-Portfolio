@@ -1,6 +1,7 @@
+"use client"
 import React from 'react';
 import { FaLinkedin, FaGithub, FaFacebookSquare, FaInstagram } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
+// import { IoLogoWhatsapp } from "react-icons/io";
 
 function Footer() {
     return (
