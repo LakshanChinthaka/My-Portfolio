@@ -2,6 +2,7 @@
 import { useAnimate } from "framer-motion";
 import React, { useRef } from "react";
 import { FiMousePointer } from "react-icons/fi";
+import Image from 'next/image'
 
 export const SampleProject = () => {
   return (
@@ -131,13 +132,15 @@ const MouseImageTrail = ({
       {children}
 
       {images.map((img, index) => (
-        <img
+        <Image
           className="pointer-events-none absolute left-0 top-0 h-14 w-20 rounded-xl border-2 border-black bg-neutral-900 object-cover opacity-0"
           src={img}
           alt={`Mouse move image ${index}`}
           key={index}
           data-mouse-move-index={index}
-        />
+          width={1000}
+          height={500}
+        ></Image>
       ))}
     </div>
   );

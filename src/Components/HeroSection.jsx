@@ -1,4 +1,5 @@
 "use client"
+// import Image from 'next/image'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -6,6 +7,7 @@ import { FaInstagram } from "react-icons/fa6";
 // import { IoLogoWhatsapp } from "react-icons/io";
 import ViewBtn from "./Button/ViweBtn";
 import DownloadBtn from "./Button/DownloadBtn";
+import Image from 'next/image'
 
 
 
@@ -20,19 +22,21 @@ function HeroSection() {
                     <div
 
                         className="mt-[-20px] mb-5 justify-center ml-[120px] flex  md:ml-[150px] lg:hidden  lg:ml-[50px] md:mb-10  w-[200px] h-[200px]  md:w-[300px] md:h-[300px]  p-3   rounded-full ">
-                        <img
+                        <Image
                             src="/My-Profile-image.png"
                             className="ml-10 rounded-full flex justify-center object-cover relative z-10 opacity-95"
-                            alt="profile-image">
-                        </img>
+                            alt="profile-image"
+                            width={500}
+                            height={500}>
+                        </Image>
                     </div>
 
                     <div className="mr-auto place-self-center lg:col-span-7 lg:mt-20">
 
                         <div className="inline-flex">
 
-                        <h1 className="text-gray-800 relative  z-10 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[57px] lg:text-[45px] flex   dark:text-white">I'm </h1>
-                        <h1 className=" max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[57px] lg:text-[45px] flex  ml-3 text-[#fbb40c] animate-bounce relative z-10">Lakshan Chinthaka.</h1>
+                            <h1 className="text-gray-800 relative  z-10 max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[57px] lg:text-[45px] flex   dark:text-white">I'm </h1>
+                            <h1 className=" max-w-2xl xl:mt-[-50px]  mb-4  text-4xl font-extrabold  justify-center  text-center tracking-tight leading-none md:text-5xl xl:text-[57px] lg:text-[45px] flex  ml-3 text-[#fbb40c] animate-bounce relative z-10">Lakshan Chinthaka.</h1>
                         </div>
 
                         <h5 className="text-gray-800 flex justify-center max-w-2xl mb-4 text-xl lg:my-8 font-extrabold tracking-wide lg:text-center  md:text-5xl xl:text-[30px] lg:text-[25px]  dark:text-white ">Software Engineering</h5>
@@ -58,10 +62,14 @@ function HeroSection() {
 
                     {/* Profile Image */}
                     <div className="xl:mt-[-10px] hidden lg:flex mt-7 lg:w-[300px] lg:h-[300px]  p-3 xl:w-[400px] xl:h-[400px]  lg:ml-[-100px] rounded-full ">
-                        <img src="/My-Profile-image.png"
+                        <Image src="/My-Profile-image.png"
                             className="ml-16 rounded-full object-cover z-10 opacity-95"
-                            alt="profile-image">
-                        </img>
+                            alt="profile-image"
+                            width={500}
+                            height={500}
+                        >
+
+                        </Image>
                     </div>
 
                     <div className="mt-3 relative lg:col-span-10 md:mt-10 flex justify-center lg:ml-[180px]  lg:justify-start gap-10 lg:mt-7 ">
@@ -90,10 +98,13 @@ function HeroSection() {
 
                 </div>
 
-            <img src="/bg.png"
-                className='lg:mt-[-180px] lg:ml-[-40px] fixed   z-0 object-cover  opacity-20'
-                alt="portfolio-background-image"
-            />
+                <Image
+                    src="/bg.png"
+                    className="lg:mt-[-180px] lg:ml-[-40px] fixed z-0 object-cover opacity-20"
+                    alt="portfolio-background-image"
+                    width={1920} // Replace 1920 with the width of your image
+                    height={1080} // Replace 1080 with the height of your image or the viewport height
+                />
 
             </section>
 

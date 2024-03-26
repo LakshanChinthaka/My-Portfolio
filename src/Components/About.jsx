@@ -6,6 +6,7 @@ import { TiHtml5 } from "react-icons/ti";
 import { FaAws } from "react-icons/fa";
 import { SiFirebase } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+import Image from 'next/image'
 
 
 function About() {
@@ -31,10 +32,12 @@ function About() {
                     }}
                     className="mt-[-20px] lg:ml-[-100px]  mb-5  p-3 rounded-full ">
 
-                    <img src="https://static.vecteezy.com/system/resources/previews/024/785/833/non_2x/3d-male-character-presenting-to-the-left-free-png.png"
+                    <Image src="https://static.vecteezy.com/system/resources/previews/024/785/833/non_2x/3d-male-character-presenting-to-the-left-free-png.png"
                         className="z-400 relative xl:w-[550px] xl:h-[550px] lg:w-[480px] lg:h-[500px] md:w-[400px] md:h-[400px] w-[300px] h-[300px]"
                         alt="3d-man"
-                    />
+                        width={500}
+                        height={500}
+                    ></Image>
 
                 </motion.div>
 

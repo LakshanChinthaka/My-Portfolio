@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Image from 'next/image'
 
 function NabBar() {
     return (
@@ -7,7 +8,12 @@ function NabBar() {
             <nav className="bg-white  border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="/" className="flex relative z-40 items-center space-x-3 rtl:space-x-reverse">
-                        <img src="/logo.png" className="relative h-[80px] w-[260px] opacity-90" alt="Flowbite Logo" />
+                        <Image src="/logo.png" 
+                        className="relative h-[80px] w-[260px] opacity-90" 
+                        alt="chincodex portfolio website internship software engineer personal portfolio sri lanka Logo"
+                        width={260}
+                        height={80}
+                        ></Image>
                     </a>
 
                     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
