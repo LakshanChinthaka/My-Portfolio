@@ -48,14 +48,14 @@
           </motion.div>
         </div>
         
-        <SampleProject/>
+        {/* <SampleProject/> */}
 
 
 
         <About />
-        <MarqueeLeft />
+        {/* <MarqueeLeft /> */}
         <Project />
-        <MarqueeLeft />
+        {/* <MarqueeLeft /> */}
         <Contact />
         <Footer />
         
