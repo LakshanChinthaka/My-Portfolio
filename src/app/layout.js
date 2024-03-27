@@ -1,5 +1,7 @@
+// "use client"
 import { Poppins } from 'next/font/google';
 import "./globals.css";
+// import { useEffect } from 'react';
 
 // Font loading with crossorigin set to 'anonymous'
 const inter = Poppins({
@@ -17,7 +19,12 @@ export const metadata = {
   }
 };
 
+// export const useClient = () => {
+//   useEffect(() => {}, []);
+// };
+
 export default function RootLayout({ children }) {
+  // useClient();
   return (
     <html lang="en">
       <head>
@@ -27,6 +34,7 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta httpEquiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload" />
         <meta name="referrer" content="no-referrer" />
+        <link rel="stylesheet" href={inter.href} />
         {/* Metadata */}
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
