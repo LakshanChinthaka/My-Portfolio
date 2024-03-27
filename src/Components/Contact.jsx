@@ -3,7 +3,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <div>
+        <div className='mt-10'>
             <section className="bg-white dark:bg-gray-900  z-40">
                 <div className="py-3 mb-20 lg:py-2 px-4 mx-auto max-w-screen-md">
                     <div className="flex justify-center">
