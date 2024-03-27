@@ -7,7 +7,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   // darkMode: 'class',
-  enabled: process.env.NODE_ENV === "production",
+
   theme: {
     extend: {
       colors: {
